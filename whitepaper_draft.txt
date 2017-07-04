@@ -14,15 +14,27 @@ BlockEDU is a virtual blockchain on Ethereum built with a network of distibuted 
 
 1 Introduction
 
-Alternative forms of education enabled by the web have become a popular industry in the past decade as students face increasing tutuion rates and the inablity to afford traditional universities. Current instutions have too many auxilary fees that don't benefit the student such as adminsistrative fees. With MOOCs you do not need to be geographically close to your institution of learning. As long as the acedemic community has an internet connection and a cursory knowledge of technology they may connect with each other to advance knowledge. Institutions such as Udacity, edX, and Coursera have seen success as a perhaps viable way of spreading mass education at an affordable price. They promise to offer affordable and accessible information to those who otherwise would not have had a chance to learn. They project themselves toward Goal 4 of the 2030 Agenda for Sustainable Development where the UN has envisioned a way to ensure inclusive and quality education for all and promote lifelong learning.
+The question has been raised as to wether Universities are continuiong to provide an affordable and quility education for students. The increase of student loan debt to income has caused many students to begin looking for alternatives. Alternative forms of education enabled by the web have become a popular industry in the past decade as students face increasing tutuion rates and the inablity to afford traditional universities. Current instutions have too many auxilary fees that don't benefit the student such as adminsistrative fees. With MOOCs you do not need to be geographically close to your institution of learning. As long as the acedemic community has an internet connection and a cursory knowledge of technology they may connect with each other to advance knowledge. Institutions such as Udacity, edX, and Coursera have seen success as a perhaps viable way of spreading mass education at an affordable price. They promise to offer affordable and accessible information to those who otherwise would not have had a chance to learn. However, MOOCs have not been able to fullfil personal relationships needed for proper education and team building, they often have language barriers, and do not promote institutions that advance knowledge in their field. BlockEDU is an attempt to aid in Goal 4 of the 2030 Agenda for Sustainable Development where the UN has envisioned a way to ensure inclusive and quality education for all and promote lifelong learning.
 
 1.1 Problem Statement
 
-However, just as there are weaknesses inheret in the current web such as centralization, broken information links, security and privacy concerns, there are weaknesses in the current online education systems provided by centralized organizations. Organizations that once started with a non-profit business model have inevietably moved towards instutionalization, advertising and profit.
+However, just as there are weaknesses inheret in the current web such as centralization, broken information links, security and privacy concerns, there are weaknesses in the current online education systems provided by centralized organizations. Organizations that once started with a non-profit business model have inevietably moved towards instutionalization, advertising and profit. 
+
+Offline Institutions are also failing to keep courses affordable for students and are facilitating the rise of online education. The increase in student loan debt discourage students from enrolling in traditional universities. Teachers are incentivsed to keep course material proproetary as a way to produce income. 
 
 1.1 a The Profit Model
 
-Institutions are encouraged to take on large class sizes due to income. An example of this is a physics course for engineers that will enroll 60 students and the department will encourage the professor to flunk as many students as they can. This could be do to the simple fact that engineers do not want those that are not qualified to build important things like bridges. blockEDU will challenge this construct and ask the question of why where 60 students allowed to enroll in a course that they were not prepared to take, and why are educators encouraged to fail students, when they could be encouraged to help them succeed. There are systems in place for institutions to use grades as marker for merit, but often this falls short of its goal. Prehaps a better reputation system at scale could solve of these issues in conjuncture with an instutionless system that is not tempted to maintain a profit by failing students.
+There has been debate over the past decade that for-profit institutions are fueling the student loan crisis. [source student loan debt info]
+
+Institutions are encouraged to take on large class sizes due to income. An example of this is a physics course for engineers that will enroll 60 students and the department will encourage the professor to fail as many students as they can. This could be do to the simple fact that engineers do not want those that are not qualified to build critical infrustructure such as bridges. blockEDU will challenge this construct and ask the question of why where students allowed to enroll in a course that they were not prepared to take, and why are educators encouraged to fail students, when they could be encouraged to help them succeed. [source whitepaper notes]
+
+1.1 a Lack of feedback
+
+In order to handle the larger class sizes that universities take on, there are systems in place to use standardized tests as a marker for merit, but often this falls short of its goal and does not provide feedback neccesarry to change the beliefs of instructors on their students understanding. [see algebraic reasoning]
+
+1.1 a Accredidation
+
+Universities maintain their place in society because there is nowhere else for teachers to have the reputation they need to be trusted. The for-profit model has driven private universities to higher the best educators since profit is the main mechanism for incentivising quality eduaction.
 
 1.1 a
 
@@ -38,7 +50,16 @@ While seeminly good ideas such as open edx exist, they are technically complicat
 
 1.2 Proposed Solution
 
-BlockEDU puts forth an idea that using decentralized technologies can enforce a non-profit model that is self sustaining. The possibility of peer-to-peer education will ensure that the community always forms an organization. There will be no centralized authority to dictate how a course should be sized, scheduled, or monetized. Each community member will have the ability to use a system permentaly printed in an immutable ledger that was once used only for financial transactions. Auxilaray p2p systems will offset some the of the costs associated with "blockchains". Privacy and a lack of cencorship are built in to the systems used so that courses will never be limited to the constructs of a few, but rather molded by the masses.  Choice is the core tenant of blockEDU and if other organizations are not comforatable creating a new community, they may choose to establish a more traditional centralized and permissioned university role. Just as massive course structures will be possible so will small localized communites. Ultmately the members of this community get to determine where they belong and what works best for them.
+1.2 Profit solution
+BlockEDU puts forth an idea that using decentralized technologies can enforce a non-profit model that is self sustaining. We present a new consensus model that rewards educators for maintaining a free course. 
+
+1.2 MOOC problem
+The possibility of peer-to-peer education will ensure that the community always forms the organization. There will be no centralized authority to dictate how a course should be sized, scheduled, or monetized. BlockEDU will maintain an easy of use for educators and students such that there will not be a need for unneccesary technical installations or cloud data solutions.
+
+1.2 Accredidiation problem
+The platform will create the ablitiy to use distributed reputation in a way that provides the accredidation needed for students to trust that they are getting a quality education, and to pass this trust forward to future employeers or education groups so they may trust that a quality education was provided. 
+
+Each community member will have the ability to use a system permentaly printed in an immutable ledger that was once used only for financial transactions. Auxilaray p2p systems will offset some the of the costs associated with "blockchains". Privacy and a lack of cencorship are built in to the systems used so that courses will never be limited to the constructs of a few, but rather molded by the masses.  Choice is the core tenant of blockEDU and if other organizations are not comforatable creating a new community, they may choose to establish a more traditional centralized and permissioned university role. Just as massive course structures will be possible so will small localized communites. Ultmately the members of this community get to determine where they belong and what works best for them.
 
 
 
