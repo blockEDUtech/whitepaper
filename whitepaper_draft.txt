@@ -51,7 +51,11 @@ While seeminly good ideas such as open edx exist, they are technically complicat
 1.2 Proposed Solution
 
 1.2 Profit solution
-BlockEDU puts forth an idea that using decentralized technologies can enforce a non-profit model that is self sustaining. We present a consensus model that rewards educators for maintaining a free course. 
+BlockEDU puts forth an idea that using decentralized technologies can enforce a non-profit model that is self sustaining. We present a consensus model that rewards educators for maintaining a free course.
+
+1.2 Maintain free courses
+
+Blockedu introduces a consensus protocol that incentivises educators to not charge students for their service. The protocol will reward teachers that maintain this standard, and will not reward those that charge money for their time and content. 
 
 1.2 MOOC problem
 The possibility of peer-to-peer education will ensure that the community always forms the organization. There will be no centralized authority to dictate how a course should be sized, scheduled, or monetized. BlockEDU will maintain an easy of use for educators and students such that there will not be a need for unneccesary technical installations or cloud data solutions.
@@ -62,29 +66,42 @@ The platform will create the ablitiy to use distributed reputation in a way that
 Each community member will have the ability to use a system permentaly printed in an immutable ledger that was once used only for financial transactions. Auxilaray p2p systems will offset some the of the costs associated with "blockchains". Privacy and a lack of cencorship are built in to the systems used so that courses will never be limited to the constructs of a few, but rather molded by the masses.  Choice is the core tenant of blockEDU and if other organizations are not comforatable creating a new community, they may choose to establish a more traditional centralized and permissioned university role. Just as massive course structures will be possible so will small localized communites. Ultmately the members of this community get to determine where they belong and what works best for them.
 
 
+3.1 EDU Tokens
+
+EDU tokens are an ERC20 standard Ethereum token. These token will be used to represent a unit of having participated in consensus on the reputation system for educators. They will provide a store of wealth that reflects communities interest in the decentralized blockedu organization. They will also be used as a mechanism by which courses are unlocked in the event that teachers .
+
+// This will describe the use of tokens in the system. All business logic and funding models will be left to the website itself. Move the following to the site
+
+There is no traditional business model to sustain this so alternatives will be explored. From selling t-shirts and taking donations to distributions of organizationed owned ERC20 tokens.
+
+Tokens will be used as the initial and limited continued funding model of this non-profit. The initial sale will be used to fund development to MVP. As all systems require maintainence the non-profit will hold an excess of tokens not sold for future sales to fund further improvements and development. 
+
+3.1.1 Total Supply
+
+An arbitrary total supply of 21 million has be chosen to pay omage to bitcoin.
+
+3.1.2 Token Distribution Process
+
+A total of 4.2 Million EDU tokens will be offered in the ICO phase so that the organization may retain 80% of the total supply for future development. 
+
+A presale discount will be offered to large institutional and personal investors that wish to support blockEDU. A cap will be set at 2 Million EDU for the presale investors wishing to spend $30,000 or more.
+
+The remaining tokens will be held by the non-profit foundation as a method for funding future developnent any centralized costs to aliviate user interaction friction.
+
+
+
 
 2. System Overview
 
 BlockEDU will use a combination of the most applicable decentralized technologies. As these technolgies come into being and work out their growing pains blockEDU will retain the ability to shift its underlying tech stack to that of the best suited. We will begin creating the system by using what is currently available as of the time of writing this whitepaper draft.
 
+2.1 Consensus
+
+Much in the same way that bitcoin maintains consensus on the correctness of financial transactions with a proof of work scheme, blockEDU will maintain consensus on the idea that education should be free for those willing to learn.  
+
 2.1 Reputation system
 
 BlockEDU is implementing a reputation system based on the uniTEC distributed reputation. 
-
-2.1.1 Trust Overview
-
-2.1.2 Requirements
-
-2.1.3 Trust model
-
-2.1.3 b trust chains
-
-2.1.4 Kowledge Model
-
-2.1.5 Interactions
-
-2.1.6 Architecture
-
 
 
 2.1 Course structures
@@ -115,11 +132,7 @@ Blockchains offer a payment system that is decentralized so that direct payments
 
 Blockchains do one thing well (sometimes) at the current time of writing this. They are a form of decentralized payment processing. While transactions fees and miner centralization are inhereint problems of succesful chains, ideas on scaling are startng to form. One such possibliity that will be explored is micropayment systems and off chain state channels if fees ever become high enough to degrade the cost of savings in the mission statement. BlockEDU courses will only require one-time payyments that will cover a large time frame and will be larger in amount. So the risk of losing too much to fees is most likely neglagible.
 
-blockEDU will provide a centralized payment hub that sits on-top of the blockchain. The rationale for this is that it is too complicated and technically difficult for users to manage their keys and clients. The blockEDU servers will run the full nodes needed to access the network, and the front-end will feature a credit card processor via stripe that will automatically convert their payments to cryptocurrency. 
-
-2.2.1 c Bonds
-
-Beyond reputation systems that will be publicly available to students before enrolling courses. There will be a deposit required by eductaors to ensure they deliver as promised. 
+blockEDU will provide a centralized payment hub that sits on-top of the blockchain. The rationale for this is that it is too complicated and technically difficult for users to manage their keys and clients. The blockEDU servers will run the full nodes needed to access the network, and the front-end will feature a credit card processor via stripe that will automatically convert their payments to cryptocurrency.  
 
 2.2.2 Course Contracts
 
@@ -135,9 +148,25 @@ The course contract will be able to read from the student record registry contra
 
 2.2.4 Hash linked course material
 
+3 Consensus model
+
+
+
 3 Reputation System
 
+3.1.1 Trust Overview
 
+3.1.2 Requirements
+
+3.1.3 Trust model
+
+3.1.3 b trust chains
+
+3.1.4 Kowledge Model
+
+3.1.5 Interactions
+
+3.1.6 Architecture
 
 
 3 blockEDU contracts in detail
@@ -152,9 +181,9 @@ a unique description that is searchable by the frontend of the CMS inorder for s
 
 3.3 Provable Prerequisits
 
+4 Distributed permanent storage
 
-
-4 Immutable Database
+4.1 Reputation records
 
 4.1 IPFS / Swarm
 
@@ -165,21 +194,17 @@ The Interplanetary File system or ethereum swarm system will serve as content ad
 The smart contracts will only store the hash pointers used by the IPFS protcol. When the applications akes a request for some data it will reach out to the ipfs or swarm dht to retreive the content. This allows for large amounts of course data in the for of pdfs, lecture slides, or course videos to be uploaded to the course contract.
 
 
-
-5 Distributed permanent storage
-
-5.1 Storj / Sia / Swarm / Filecoin
+4.1 Storj / Sia / Swarm / Filecoin
 
 A network of farmers that can be accesses by the content addresed hashes will garuntee that the course material stays alive in the network, even well beyond the closing of the course if chosen.
 
-5.2 Provably retrivable records
+4.2 Provably retrivable records
 
 All the listed systems use some form of auditing to ensure that files remain in the network that are not popular. As courses will not be poular content, especially after they have closed, it is important to have a system that will maintain them for future use as free and open learning materials for others. It will cost a fee from the foundation to keep these records active. It is possible to have a portion of the course costs be placed as farming fees in the event that the organization no longer exists or no longer has enough funding to provide this service.
 
-5.3 Records controlled by students
+4.3 Records controlled by students
 
 The student records of their scores on all exams and total course grades will also be kept on these provably retrivable systems. All of these systems encrypt the data that they store so the student will retain ful lcontrol over who sees their success or faulures.
-
 
 
 6. Frontend Applicatin Framework
@@ -193,28 +218,3 @@ Javascript has been chosen as an easy deployment language for the frontend and V
 7. Centralized Bridged Access
 
 Not everyone can be expected to be able to understand how to use peer-to-peer technologies in their current state. A non-profit organaztion will be formed to help address this problem. POssible centralized services that will need to be provided for a time are fiat payment processing, full-node services such as infura that are able to run the open RPC clients for Eth, IPFS, and Storj, and the application server that will serve the javascript CMS client.
-
-
-
-3.1 EDU Tokens
-
-EDU tokens are an ERC20 standard Ethereum token. These token will be used to represent a unit of having participated in consensus on the reputation system for educators. They will provide a store of wealth that reflects voters interest in the decentralized organization. They will also be the payment mechanism by which courses are bought and sold.
-
-// This will describe the use of tokens in the system. All business logic and funding models will be left to the website itself. Move the following to the site
-
-There is no traditional business model to sustain this so alternatives will be explored. From selling t-shirts and taking donations to distributions of organizationed owned ERC20 tokens.
-
-Tokens will be used as the initial and limited continued funding model of this non-profit. The initial sale will be used to fund development to MVP. As all systems require maintainence the non-profit will hold an excess of tokens not sold for future sales to fund further improvements and development. 
-
-3.1.1 Total Supply
-
-An arbitrary total supply of 21 million has be chosen to pay omage to bitcoin.
-
-3.1.2 Token Distribution Process
-
-A total of 4.2 Million EDU tokens will be offered in the ICO phase so that the organization may retain 80% of the total supply for future development. 
-
-A presale discount will be offered to large institutional and personal investors that wish to support blockEDU. A cap will be set at 2 Million EDU for the presale investors wishing to spend $30,000 or more.
-
-The remaining tokens will be held by the non-profit foundation as a method for funding future developnent any centralized costs to aliviate user interaction friction.
-
