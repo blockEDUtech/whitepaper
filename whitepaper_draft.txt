@@ -1,3 +1,5 @@
+Rough Draft. Official Doc in PDF
+
 blockEDU
 
 A decentralized education system.
