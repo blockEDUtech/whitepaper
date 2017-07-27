@@ -128,9 +128,12 @@ submitBlock()
 	- update the courses with average a teacher will be paid in a quarter
 	- issue the block reward.
 	- [could be expensive call?]
+	Each mined block should update the reputations of the courses they are affecting, this way it reduces the cost of every agents reputation update per block
 
 
-Students pay for a course locking in what they feel the course is worth in total (prediction market style). When the lesson ends it will issue a short test to the students and log the course material covered. This will open all miners up to vote on this lesson.
+Students pay for a course locking in what they feel the course is worth in total (prediction market style). When the lesson ends it will issue a short test to the students and log the course material covered. This will open all miners up to vote on this course.
+
+Educators are rewarded over time by the current longest chain. If the miners vote v(0) the educator is rewarded nothing for that lesson, if the longest chain is v(2) they will get 50% of the lessons value. Miners may switch chains at any point as only the longest chain will award rep while the other 4 will lose the same proportion of rep. They will lose the early voting bonus for leaving their chain to go to a longer chain. 
 
 course functions
 
@@ -177,3 +180,7 @@ A total reputation for each teacher can be calculated by agregating the score fr
 Miners may switch their vote and lose the early reputation boost before the course closes. When the course closes it uses a transaction to finalize and update the reputations of the miners in that course.
 
 A teachers reputation will increase for giving well rated courses which can in tern be used to mine more edu for judging other courses. 
+
+We only have subjective evalutions, the miners must decide for themselves if they feel the course is providing value to the consensus of open and affordable quality education. 
+
+I dont have to regulate the windows of voting, just let information on the course come in and have the gamble a miner places by being the  first vote encourage them to understand more about the course.
