@@ -1,0 +1,179 @@
+-abstract
+
+how to compare value with no common price?
+
+love system 
+
+- community based reputation, not subjective interpersonal relations. It tries to understand the individual value someone is providing to a community
+
+- predicition market style - relative weights for each community, members get gratitude for conrtibutions
+
+rep linked to actual contribution - value given by value of contribution
+rep linked to my ability to be a curator that can asses the value of contribution. consensus on market price
+
+nobody really knows the value of every interconnected contribution so it doesn't make sense to explicitly define these values. 
+
+appreciated contribution, as people recogognize good contributions. the value of that contribution will go up. 
+
+contributers build rep when others agree on their assesment. Can put a signal out to show what is valuable at the stake of their rep. 
+
+reputation doesnt move between communities. But you can show value if you are awarded in a generally accepted community. 
+
+rep communicated with a number that others can understand. Build a system of identity that can reflect your skills by contribution that others will be able to verify. Can get a global view of what communities are popualr and waht ideas communities agree to be valuable. 
+
+Make my protocol compatible with backfeed,
+
+how do you ensure good feedback. They do this buy the rep of the curator that wont be rewarded for a common idea that nobody else votes on. (how can this be protected against sybil)
+
+--------------
+
+The market provides distributed coordination - problem is it focuses on market value - each community has different logic, no market mechansim. Using curecny to store value and price to compare two things. LOVE is an alternative system of NON-market providing market like qualities. There is no exchange, just interaction. Maintain a history of value contributed.
+
+three layers:
+1. understand the community based reputation, not interpersonal subjective rep between people. Identify the different ecosystems (communities) and their relative weights. 
+
+Create a prediction market style system where we place value on communities to get the relative weight.
+
+2. Community value: every individual can contribute to get appreciation for that contribution. 
+
+Two rep, 
+1 linked to contributition. I get Rep1 back as more members appreciate what i've done 
+2. Rep for the curartors. Rep2 is assesing others. It is built by others agreeing with you when you place appreciation on a contribution. I add some Rep2 to a Rep1 wiki contribution and my Rep2 will increase as others place Rep2 on the wiki Rep1
+
+moving reputation between communities is hard, there must be a common base that agrees on the values of other communities. 
+
+3. The interface with the 3rd parties, market actor, public sector. Being able to show a real school my appreciated value.
+
+Could become some for of identity system by showing what you are good at in general.
+
+
+Can I sell my private key and in turn my reputation?
+
+
+
+-- blockEDU protocol
+
+Assume teachers can not be trusted and will cheat a reward if possible
+Teachers need to be paid
+Teachers are more stable than most nodes in a network and will likely complete a course
+the network is hostile
+
+Transactions: Provided by educators to prove they are deserving of the cost of education provided by the students.
+
+Students lock their fees for a course into a contract, if they supply challenges that the teacher can prove then the proofs will award the teacher. If students to not supply challenges they may be rewarded anyway? Maybe everytime a student takes a test or a lesson they supply some feedback that the course is being taught well. Or have a teacher prepost anwsers to a test and hash it before a lesson. When the lesson is over students will supply some answers that show knowledge increase, in doing so the teacher will publish the contents of the hash to prove that the students were tested against the secret. 
+
+A miner then checks the published answers against the student responses and publishes a class average that dictates how much the teacher gets paid. This is not a sybil attack vector because a teacher would only be paying themselves if they supply correct answers. This could insentivise teachers to share the answers so they may get a higher average for payout. Any remaining balance at the end of the course is distributed back to the students (does this mean that students that do well are paying for students that do not? does this incentivise a student to get a bad score but retain knowledge so they may not pay for a course, can this be prevented by needing good grades)
+
+miners that report can follow a backfeed protocol where they are penalized for not agreeing with the outcomes of other miners. All miners try to confirm the total of all assignments/lessons and place their scores in a block and hash it. Scores that differ by too much are reduced in rep. The block reward is proportioned by the amount of rep miners have.
+
+allow for miners to all validate the transactions so that they can reject block that they dont agree with (the block reward is written in the block). 
+
+Come up with a qualitative meassure of course value or knowledge being provided could be hard.
+
+there is a pool of assignments that needs to be graded, the miners will pull these transactions and try to mine them as a block. A transaction being mined means that an assignment was graded, the class average was computed, and the teacher payout transaction is updated.
+
+the grades from the standard tests for the proof of education do not affect the teacher reported grades that are stored in the reputation.
+
+Use reputation only to log the acheivments made by students and educators.
+
+could create a subject area wide standard like that for the math department to prevent teachers making easy tests to be rewarded.
+
+teachers encrypt the tests and answers seperatly and store the secrets. They then hash both of these and upload them to the contract before the course begins. When the contract allows them to publish a transaction [one transaction type], they will publish the secret. Miners will then take the secret and decypt the test and answers. They will reorganize the possible answers such that a string possible solution that was once in postion[0] is now in position[Rand to hash of current or previous block]. They complete this transaction by updating the contract with hash of the updated possible answers to each question. (other miners will verify this is correctly done when mining blocks and reject blocks that do not maintain this protocol) students could then calculate this reorg and get the answers!
+
+[tx type 2] Teachers must wait until the students have responded to publish the secret revealing the answers. Miners will check this in the contract
+
+----
+
+Students set the price of the course not the teacher. Teacher sets the max and the course will pick up students who put higher value in (an auction to determine the value of the course). This collection of funds will be the pool that teachers may be rewarded for each lesson. The median of the top "evaluations" (the tokens paid by a student for that lesson) will be the amount of tokens issued to the instructor for that lesson. This value is recorded to the total value of the course and persisted to the educators reputation. This will show how much money an educator is making as the perceived value of the course. If others inspect the course and find that the teacher should be paid less EDU they will start bidding less on the next course and lower the total value of the courses taught by that educator.
+
+Miners get rewarded by a percentage of their rep. Higher rep has a higher chance of mining a block. Reputation is earned by reporting correctly. How?
+
+Lets define the neighborhoods and context areas so that a more rigid trust transitivity measure can be applied. 
+
+Let's define the evalution sets, how each course may be determined to be valuable. Create a function that determines the amount of EDU an educator is rewarded from the student pool or total supply of token. 
+
+Nodes will gain rep in two ways. 
+
+1) teaching courses and contributing value to Mathematics
+2) taking courses and evaluting value of educators in Mathematics
+
+We will start with 
+
+Reputation for an educator builds over the course by the students taking it, the teacher doesnt decide how much to charge for the course, they set the max number to enter, sudents will escrow the amount they think they should pay for a course, the highest that are qualified to enter are enrolled. As the course goes on miners will vote on the course 
+
+each community gets its own chain. When miners go to add their blocks to a chain (their vote on courses) they will be rewarded (how) for being on the longest chains. Miners reject blocks that don't believe to be accurate (course was or wasn't of quality) and mine on the chain they believe is the most accurate.
+
+example
+
+class01 [genesis vote]-> [1] -> [1] -> [1] -> [1] -> [1]
+								   \-> [0] -> [0]
+
+the chain voting [1] or yes for the course have the longest chain so their transactions are valid (these transactions hold movement and ownership of EDU mined tokens). When the course closes the longest chain will be able to claim the block rewards.
+
+miners are elected by some game to become the miner of a block, the block contains multiple votes on what that miner believes to be accurate evalutions of courses (thus extending the subchains of each course chain (chainception?). Rounds will collect the winning miners votes and place his results on each class he has voted on. Each miner has a reputation and is awarded more reputation when they are on the winning chains of the course blockchians. When the course finishes the miners on the winning chain will be rewarded tokens and reputation. (follow the backfeed protocol and award early voters higher rep as to incentivize those to make up their own minds and not simply vote for the longest chains. If you are the last to vote on a course, you will be rewarded nothing) The reputation will determine how many tokens each miner gets from the course block reward. The reputation on the will be lowered on the losing chain. Miners may change their vote and move chains until the course closes the course block and locks the new reputations into the main top level educhain. 
+
+Building rep increases your chances of mining a block. each miner votes on the courses they feel capabale of judging. the increase the quality and affordability chain on a certain course and lose some rep for being the first to do so, then each time another miner confirms their votes, they will be rewarded with more rep. each lesson can be confirmed by more than one miner. At the end of the lesson, the score recieved from the miners is used to determine how much EDU of the student funded EDU will be rewarded to the teacher. 
+
+-----
+
+verification game
+
+mine a block every 60 minutes a blockEDU chain contract will open to call a function called mine(). 
+	- It will calculate the elected miner [how?]
+	- allow the winning miner to issue her block
+
+submitBlock()
+	- Will issue the block the miner has stored. Reject blocks with old courses
+	- update the reputation scores of the miner and the associated miners in their transactions (whether they increased a chain updating their rep or reduced their own)
+	- update the courses with average a teacher will be paid in a quarter
+	- issue the block reward.
+	- [could be expensive call?]
+
+
+Students pay for a course locking in what they feel the course is worth in total (prediction market style). When the lesson ends it will issue a short test to the students and log the course material covered. This will open all miners up to vote on this lesson.
+
+course functions
+
+initLesson()
+	- allows teacher to post the days course material
+
+submitTest()
+	- allows a teacher to submit a short test
+
+transacttLesson()
+	- issues the answers and locks in the student responses
+
+Miners pick up lesson transactions and process them for their blocks
+
+Processing transactions
+	- review questions and answers logged of students
+	- review the lesson's course material
+	- create a binary score [0,1] to state the course was
+		- 0 not of the quality that the students payed for
+		- 1 of the quality the students payed for
+	- extend each of the course rep chains by this vote
+
+
+Miners will search for open lessons to put into a block as a vote, they will use the test results and course materials to make their judgements. They will place their votes and wait to see if the are selected to be a miner.
+
+Miner selection
+	- make higher reputation have greater chance of being selected
+	- use some randomness from the block chain to influence the probability
+	- you can still be selected with low rep just not as likely 
+
+Block Submission Algorithm
+	- Must update the reputations of all miners this block affects
+	- Must calculate the new reptuation of the miner
+	- Must update the miners total rep. 
+
+If you extend a vote on a course then you lose some rep for doing so until another extends your vote. Each lesson can take multiple votes in a block from miners. By using rep to cast a vote you will lose rep in the propportion of the losing chain. This also means that you must first gain rep by teaching a course that is valued by other miners to be worthy. We will bootstrap the network with a few trusted educators and an initial REP. 
+
+Every quarter the course contract will evaluate the current score from miners and reward the educator proportionally from the pool students have locked up. At the end of the course the remaining funds are issued back to the students. (proportional to how much the put in to start) the mapping of the value will be on the evalutation set {1,2,3,4,5} v(1) = 0 v(2) = 0.25 v(3) = 0.5 v(4) = 0.75 v(5) = 1
+
+These values represent the proportion of tokens the educator will be paid quarterly. If the longest chain on Q1 is v(3) then the educator will 50% of the amount of tokens paid. The miners who voted v(1,2,4,5) will have their reputation reduced 
+
+A total reputation for each teacher can be calculated by agregating the score from each of their courses. 
+
+Miners may switch their vote and lose the early reputation boost before the course closes. When the course closes it uses a transaction to finalize and update the reputations of the miners in that course.
+
+A teachers reputation will increase for giving well rated courses which can in tern be used to mine more edu for judging other courses. 
