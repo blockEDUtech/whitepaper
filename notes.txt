@@ -184,3 +184,9 @@ A teachers reputation will increase for giving well rated courses which can in t
 We only have subjective evalutions, the miners must decide for themselves if they feel the course is providing value to the consensus of open and affordable quality education. 
 
 I dont have to regulate the windows of voting, just let information on the course come in and have the gamble a miner places by being the  first vote encourage them to understand more about the course.
+
+----
+
+teachers that choose to give course entry away for 0 EDU tokens will be rewarded extra reputation. maybe create a scale where the teacher places how much they would like to be paid, vs how much students actually pay, if their max is lower they are rewarded extra rep at that scale. 
+
+Rep allows for more blocks to be mined, mining empty blocks does not give a reward in more rep but it does issue EDU.
